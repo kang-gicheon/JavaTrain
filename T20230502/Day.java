@@ -197,7 +197,7 @@ public class Day {
 		
 		String[] wd = {"일","월","화","수","목","금","토"};
 		
-		return String.format("%04년 %02월 %02일(%s)",
+		return String.format("%04d년 %02d월 %02d일(%s)",
 						year,month,date,wd[dayOfWeek()]);
 		
 	}

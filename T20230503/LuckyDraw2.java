@@ -1,9 +1,8 @@
 package T20230503;
 
-import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Random;
-import java.util.GregorianCalendar.*;
+import static java.util.GregorianCalendar.*;
 
 
 public class LuckyDraw2 {
@@ -13,11 +12,11 @@ public class LuckyDraw2 {
 	GregorianCalendar today = new GregorianCalendar();
 
 	
-	int y = today.get(Calendar.YEAR);		// 연
+	int y = today.get(YEAR);		// 연
 
-	int m = today.get(Calendar.MONTH) + 1;	// 월
+	int m = today.get(MONTH) + 1;	// 월
 
-	int d = today.get(Calendar.DATE);		// 일
+	int d = today.get(DATE);		// 일
 
 	System.out.printf("오늘은 %04d년 %02d일입니다.\n",y,m,d);
 

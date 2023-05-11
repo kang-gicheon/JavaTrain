@@ -1,7 +1,7 @@
 package T20230510;
 
-import java.util.GregorianCalendar.*;
 import java.util.GregorianCalendar;
+
 
 public class Calendar {
 
@@ -52,7 +52,7 @@ public class Calendar {
 		System.out.println("---------------------");
 		
 		for (int i = 0; i < wd; i++) 
-			System.out.println(" ");		// 1일보다 왼쪽 스페이스를 표시
+			System.out.print("  ");		// 1일보다 왼쪽 스페이스를 표시
 		for (int i = 1; i <= mdays; i++) {
 			
 			System.out.printf("%3d",i);
@@ -71,8 +71,8 @@ public class Calendar {
 		if(args.length == 0) {
 			
 			GregorianCalendar today = new GregorianCalendar();	// 현재 날짜
-			year = today.get(year);			// 년
-			month = today.get(month) + 1;	// 월
+			year = today.get(today.YEAR);			// 년
+			month = today.get(today.MONTH) + 1;	// 월
 			 
 		} else {
 			
